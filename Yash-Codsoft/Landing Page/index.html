@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/35253a8ab1.js" crossorigin="anonymous"></script>
+    <title>Coke Cola</title>
+</head>
+<body>      
+    <section class="section">
+        <header>
+            <a href="#"><img src="coke.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h1>That's What<br><span>You like</span></h1>
+                <p>Experience the effervescent joy with Coca-Cola, where every sip is a celebration of moments shared.
+                    Dive into a world of refreshment, innovation, and timeless taste. Join us in the journey of spreading happiness, one fizzy delight at a time. 
+                    Cheers to the extraordinary in every sip!</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="img-box">
+                <img src="Coke-bg.png" class="coke">
+            </div>
+        </div>
+        <ul class="coke2">
+            <li><img src="Coke-bg.png" onclick="imgSlider('Coke-bg.png');changeBg('#e60c2c')"></li>
+            <li><img src="coke1-bg.png"  onclick="imgSlider('coke1-bg.png');changeBg('#1e1e1e')"></li>
+        </ul>
+        <ul class="social-icon">
+            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.coke').src = anything;
+        }
+        function changeBg(color){
+            const sec = document.querySelector('.section');
+            sec.style.background = color;
+        }
+    </script>
+    
+</body>
+</html>

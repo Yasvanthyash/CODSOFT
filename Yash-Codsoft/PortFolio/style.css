@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%; 
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: #031540;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color:#3f68c6;
+}
+.home{
+    height: 100vh;
+    background: linear-gradient(-90deg,#031540 65%, #fff 35%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-image{
+    display: flex;
+    justify-content: center;
+    width: 580px;
+    height: 580px;
+    background: #031540;
+    border-radius: 50%;
+    border: 20px solid #fff;
+    outline: 20px solid #031540;
+}
+.home-image img{
+    position: relative;
+    bottom: 28px;
+    max-width: 340px;
+    width: 400px;
+    height: 500px;
+}
+.home-content{
+    max-width: 600px;
+    color: #fff;
+    text-align: right;
+}
+.home-content h1{
+    font-size: 55px;
+    line-height: 1.2;
+}
+.home-content h3{
+    font-size: 40px;
+    color: #00abf0;
+    -webkit-text-stroke: .5px #fff;
+}
+.home-content p{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.social-icon{
+    margin: 25px 0 40px;
+}
+.social-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    transition: .5s;
+    margin-left: 10px;
+}
+.social-icon a:hover{
+    background: #00abf0;
+    color: #fff;
+    border-color: #00abf0;
+    box-shadow: 0 0 10px #00abf0;
+}
+.btn{
+    padding: 12px 35px;
+    background: #00abf0;
+    border-radius: 40px;
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #00abf0;
+}
+.btn:hover{
+    box-shadow: none;
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Playfair Display", serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 1, 1);
+    transition: 0.5s;
+}
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 140px;
+}
+header ul{
+    position: absolute;
+    right:0;
+    display: flex;
+    padding: 20px 60px;
+    font-size: 20px;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content{
+    color:white;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .text{
+    position: relative;
+    max-width: 600px;
+}
+.content .text h1{
+    font-size: 3em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.content .text h1 span{
+    font-size: 2em;
+}
+.content .text a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.content .img-box{
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+.content .img-box img{
+    max-width: 500px;
+}
+.coke2{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.coke2 li{
+    list-style:none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.coke2 li:hover{
+    transform: translateY(-15px);
+}
+.coke2 li img{
+    max-width: 110px;
+}
+.social-icon{
+    position: absolute;
+    top:50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social-icon{
+    list-style: none;
+}
+.social-icon i{
+    display: inline-block;
+    margin: 20px 0;
+    transform: scale(2.5);
+    cursor: pointer;
+    user-select: none;
+    color: #fff;
+}
